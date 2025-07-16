@@ -9,24 +9,19 @@
 <body>
   <div class="container">
     <h1>Roman ↔ Number Converter</h1>
-
-    <section>
+    <div class="converter">
       <h2>Number ➜ Roman</h2>
       <input type="number" id="numberInput" placeholder="Enter a number (1–3999)" />
       <button onclick="handleConvertToRoman()">Convert</button>
-      <p id="romanResult"></p>
-    </section>
-
-    <section>
+      <p class="result" id="romanResult"></p>
+    </div>
+    <div class="converter">
       <h2>Roman ➜ Number</h2>
-      <input type="text" id="romanInput" placeholder="Enter a Roman numeral" />
+      <input type="text" id="romanInput" placeholder="Enter a Roman numeral (e.g. XIV)" />
       <button onclick="handleConvertToNumber()">Convert</button>
-      <p id="numberResult"></p>
-    </section>
+      <p class="result" id="numberResult"></p>
+    </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
-
-<!-- trigger build -->
